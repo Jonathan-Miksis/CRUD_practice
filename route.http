@@ -1,0 +1,14 @@
+get http://localhost:3000/photos
+
+###
+get http://localhost:3000/photos/1
+
+###
+POST http://localhost:3000/photos
+content-type: application/json
+
+{
+  "input_name": "summer",
+  "input_width": 200,
+  "input_height": 500
+}
