@@ -12,3 +12,14 @@ content-type: application/json
   "input_width": 200,
   "input_height": 500
 }
+
+
+###
+PATCH http://localhost:3000/photos/1
+content-type: application/json
+
+{
+  "input_name": "fall",
+  "input_width": 400,
+  "input_height": 400
+}
