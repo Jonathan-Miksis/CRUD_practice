@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   post "/photos", controller: "photos", action: "create"
 
   patch "/photos/:id", controller: "photos", action: "update"
+
+  delete "/photos/:id", controller: "photos", action: "destroy"
 end

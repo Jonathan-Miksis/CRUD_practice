@@ -23,3 +23,6 @@ content-type: application/json
   "input_width": 400,
   "input_height": 400
 }
+
+###
+DELETE http://localhost:3000/photos/2

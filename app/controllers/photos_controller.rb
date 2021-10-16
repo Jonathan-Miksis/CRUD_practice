@@ -29,5 +29,11 @@ class PhotosController < ApplicationController
     update_photo.save
     render json: update_photo
   end
+  
+  def destroy
+    delete_photo = Photo.find_by(id: params[:id])
+    delete_photo.destroy
+    render json: {message: "Photo successfully deleted."}
+  end
 
 end
